@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CC038CC4D7531354E1FA4CF /* Pods_socket_indoorlocation_provider_ios_objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE53BE898D0A214E8A66491 /* Pods_socket_indoorlocation_provider_ios_objc.framework */; };
+		8FE3DE6620188F620080C4D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3DE6520188F620080C4D5 /* AppDelegate.m */; };
+		8FE3DE6920188F620080C4D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3DE6820188F620080C4D5 /* ViewController.m */; };
+		8FE3DE6C20188F620080C4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE3DE6A20188F620080C4D5 /* Main.storyboard */; };
+		8FE3DE6E20188F620080C4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE3DE6D20188F620080C4D5 /* Assets.xcassets */; };
+		8FE3DE7120188F620080C4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE3DE6F20188F620080C4D5 /* LaunchScreen.storyboard */; };
+		8FE3DE7420188F620080C4D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3DE7320188F620080C4D5 /* main.m */; };
+		8FE3DE7D2018901B0080C4D5 /* ILSocketIndoorLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3DE7C2018901B0080C4D5 /* ILSocketIndoorLocationProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CE53BE898D0A214E8A66491 /* Pods_socket_indoorlocation_provider_ios_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socket_indoorlocation_provider_ios_objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8527068AD83F444BD7EB9A00 /* Pods-socket-indoorlocation-provider-ios-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socket-indoorlocation-provider-ios-objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-socket-indoorlocation-provider-ios-objc/Pods-socket-indoorlocation-provider-ios-objc.release.xcconfig"; sourceTree = "<group>"; };
+		8FE3DE6120188F620080C4D5 /* socket-indoorlocation-provider-ios-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "socket-indoorlocation-provider-ios-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE3DE6420188F620080C4D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8FE3DE6520188F620080C4D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8FE3DE6720188F620080C4D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8FE3DE6820188F620080C4D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8FE3DE6B20188F620080C4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FE3DE6D20188F620080C4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FE3DE7020188F620080C4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FE3DE7220188F620080C4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE3DE7320188F620080C4D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FE3DE7B2018901B0080C4D5 /* ILSocketIndoorLocationProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILSocketIndoorLocationProvider.h; sourceTree = "<group>"; };
+		8FE3DE7C2018901B0080C4D5 /* ILSocketIndoorLocationProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILSocketIndoorLocationProvider.m; sourceTree = "<group>"; };
+		D355C4D07F3D1177A94EAA5D /* Pods-socket-indoorlocation-provider-ios-objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socket-indoorlocation-provider-ios-objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socket-indoorlocation-provider-ios-objc/Pods-socket-indoorlocation-provider-ios-objc.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FE3DE5E20188F620080C4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC038CC4D7531354E1FA4CF /* Pods_socket_indoorlocation_provider_ios_objc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFB067F79DF40DB1830A67E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CE53BE898D0A214E8A66491 /* Pods_socket_indoorlocation_provider_ios_objc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A899C32B6F414F483289782 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D355C4D07F3D1177A94EAA5D /* Pods-socket-indoorlocation-provider-ios-objc.debug.xcconfig */,
+				8527068AD83F444BD7EB9A00 /* Pods-socket-indoorlocation-provider-ios-objc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8FE3DE5820188F620080C4D5 = {
+			isa = PBXGroup;
+			children = (
+				8FE3DE6320188F620080C4D5 /* socket-indoorlocation-provider-ios-objc */,
+				8FE3DE6220188F620080C4D5 /* Products */,
+				1A899C32B6F414F483289782 /* Pods */,
+				0FFB067F79DF40DB1830A67E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FE3DE6220188F620080C4D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3DE6120188F620080C4D5 /* socket-indoorlocation-provider-ios-objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FE3DE6320188F620080C4D5 /* socket-indoorlocation-provider-ios-objc */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3DE7A201890090080C4D5 /* Provider */,
+				8FE3DE6420188F620080C4D5 /* AppDelegate.h */,
+				8FE3DE6520188F620080C4D5 /* AppDelegate.m */,
+				8FE3DE6720188F620080C4D5 /* ViewController.h */,
+				8FE3DE6820188F620080C4D5 /* ViewController.m */,
+				8FE3DE6A20188F620080C4D5 /* Main.storyboard */,
+				8FE3DE6D20188F620080C4D5 /* Assets.xcassets */,
+				8FE3DE6F20188F620080C4D5 /* LaunchScreen.storyboard */,
+				8FE3DE7220188F620080C4D5 /* Info.plist */,
+				8FE3DE7320188F620080C4D5 /* main.m */,
+			);
+			path = "socket-indoorlocation-provider-ios-objc";
+			sourceTree = "<group>";
+		};
+		8FE3DE7A201890090080C4D5 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8FE3DE7B2018901B0080C4D5 /* ILSocketIndoorLocationProvider.h */,
+				8FE3DE7C2018901B0080C4D5 /* ILSocketIndoorLocationProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FE3DE6020188F620080C4D5 /* socket-indoorlocation-provider-ios-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE3DE7720188F620080C4D5 /* Build configuration list for PBXNativeTarget "socket-indoorlocation-provider-ios-objc" */;
+			buildPhases = (
+				FFBC88F12FF96404D81CC876 /* [CP] Check Pods Manifest.lock */,
+				8FE3DE5D20188F620080C4D5 /* Sources */,
+				8FE3DE5E20188F620080C4D5 /* Frameworks */,
+				8FE3DE5F20188F620080C4D5 /* Resources */,
+				F95BA8ADE0360FCA542F1FBD /* [CP] Embed Pods Frameworks */,
+				528E163922148AD16AA661B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "socket-indoorlocation-provider-ios-objc";
+			productName = "socket-indoorlocation-provider-ios-objc";
+			productReference = 8FE3DE6120188F620080C4D5 /* socket-indoorlocation-provider-ios-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FE3DE5920188F620080C4D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Etienne Mercier";
+				TargetAttributes = {
+					8FE3DE6020188F620080C4D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8FE3DE5C20188F620080C4D5 /* Build configuration list for PBXProject "socket-indoorlocation-provider-ios-objc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FE3DE5820188F620080C4D5;
+			productRefGroup = 8FE3DE6220188F620080C4D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FE3DE6020188F620080C4D5 /* socket-indoorlocation-provider-ios-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FE3DE5F20188F620080C4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE3DE7120188F620080C4D5 /* LaunchScreen.storyboard in Resources */,
+				8FE3DE6E20188F620080C4D5 /* Assets.xcassets in Resources */,
+				8FE3DE6C20188F620080C4D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		528E163922148AD16AA661B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socket-indoorlocation-provider-ios-objc/Pods-socket-indoorlocation-provider-ios-objc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95BA8ADE0360FCA542F1FBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socket-indoorlocation-provider-ios-objc/Pods-socket-indoorlocation-provider-ios-objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBC88F12FF96404D81CC876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FE3DE5D20188F620080C4D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE3DE7D2018901B0080C4D5 /* ILSocketIndoorLocationProvider.m in Sources */,
+				8FE3DE6920188F620080C4D5 /* ViewController.m in Sources */,
+				8FE3DE7420188F620080C4D5 /* main.m in Sources */,
+				8FE3DE6620188F620080C4D5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FE3DE6A20188F620080C4D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE3DE6B20188F620080C4D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FE3DE6F20188F620080C4D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE3DE7020188F620080C4D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FE3DE7520188F620080C4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FE3DE7620188F620080C4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FE3DE7820188F620080C4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D355C4D07F3D1177A94EAA5D /* Pods-socket-indoorlocation-provider-ios-objc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGHGAE294R;
+				INFOPLIST_FILE = "socket-indoorlocation-provider-ios-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.indoorlocation.socket-indoorlocation-provider-ios-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FE3DE7920188F620080C4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8527068AD83F444BD7EB9A00 /* Pods-socket-indoorlocation-provider-ios-objc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGHGAE294R;
+				INFOPLIST_FILE = "socket-indoorlocation-provider-ios-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.indoorlocation.socket-indoorlocation-provider-ios-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FE3DE5C20188F620080C4D5 /* Build configuration list for PBXProject "socket-indoorlocation-provider-ios-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE3DE7520188F620080C4D5 /* Debug */,
+				8FE3DE7620188F620080C4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE3DE7720188F620080C4D5 /* Build configuration list for PBXNativeTarget "socket-indoorlocation-provider-ios-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE3DE7820188F620080C4D5 /* Debug */,
+				8FE3DE7920188F620080C4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FE3DE5920188F620080C4D5 /* Project object */;
+}
