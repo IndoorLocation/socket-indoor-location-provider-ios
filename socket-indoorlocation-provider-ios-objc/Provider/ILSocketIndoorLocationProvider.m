@@ -2,46 +2,49 @@
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 
+@interface ILSocketIndoorLocationProvider ()
+
+@property (nonatomic, strong) NSURL* serverUrl;
+@property (nonatomic, strong) NSString* clientIp;
+@property (nonatomic, strong) SocketManager* socketManager;
+@property (nonatomic, strong) SocketIOClient* socketClient;
+@property (nonatomic, strong) NSTimer* refreshIpTimer;
+@property (nonatomic, assign) BOOL connected;
+
+@end
+
 @implementation ILSocketIndoorLocationProvider {
-    
-    NSURL* serverUrl;
-    NSString* clientIp;
-    SocketManager* socketManager;
-    SocketIOClient* socketClient;
-    NSTimer* refreshIpTimer;
-    BOOL connected;
-    
 }
 
     
 - (instancetype) initWithUrl:(NSString*) url {
     self = [super init];
     if (self) {
-        serverUrl = [[NSURL alloc] initWithString:url];
+        _serverUrl = [[NSURL alloc] initWithString:url];
     }
     return self;
 }
     
 - (void) start {
     [self refreshIp];
-    connected = YES;
-    refreshIpTimer = [NSTimer scheduledTimerWithTimeInterval: 30
-                                                      target: self
-                                                    selector:@selector(refreshIp)
-                                                    userInfo: nil repeats:YES];
+    _connected = YES;
+    _refreshIpTimer = [NSTimer scheduledTimerWithTimeInterval: 30
+                                                       target: self
+                                                     selector:@selector(refreshIp)
+                                                     userInfo: nil repeats:YES];
 }
 
 - (void) initSocket {
-    if (serverUrl && clientIp) {
+    if (self.serverUrl && self.clientIp) {
         
-        socketManager = [[SocketManager alloc] initWithSocketURL:serverUrl config:@{@"connectParams":@{@"userId": clientIp}}];
-        socketClient = [socketManager defaultSocket];
+        self.socketManager = [[SocketManager alloc] initWithSocketURL:self.serverUrl config:@{@"connectParams":@{@"userId": self.clientIp}}];
+        self.socketClient = [self.socketManager defaultSocket];
         
-        [socketClient on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        [self.socketClient on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
             [self dispatchDidStart];
         }];
         
-        [socketClient on:@"indoorLocationChange" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        [self.socketClient on:@"indoorLocationChange" callback:^(NSArray* data, SocketAckEmitter* ack) {
             NSDictionary* responseDictionary = data[0];
             NSDictionary* indoorLocationDictionary = responseDictionary[@"indoorLocation"];
             NSNumber* latitude = indoorLocationDictionary[@"latitude"];
@@ -53,30 +56,30 @@
             [self dispatchDidUpdateLocation:indoorLocation];
         }];
         
-        [socketClient on:@"error" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        [self.socketClient on:@"error" callback:^(NSArray* data, SocketAckEmitter* ack) {
             NSString* message = data[0];
             [self dispatchDidFailWithError:[[NSError alloc] initWithDomain:message code:502 userInfo:nil]];
         }];
         
-        [socketClient connect];
+        [self.socketClient connect];
         
     }
 }
     
 - (void) destroySocket {
-    [socketClient disconnect];
-    socketClient = nil;
-    socketManager = nil;
+    [self.socketClient disconnect];
+    self.socketClient = nil;
+    self.socketManager = nil;
 }
     
 - (void) stop {
-    [refreshIpTimer invalidate];
+    [self.refreshIpTimer invalidate];
     [self destroySocket];
-    connected = NO;
+    self.connected = NO;
 }
 
 - (BOOL) isStarted {
-    return connected;
+    return _connected;
 }
 
 - (BOOL) supportsFloor {
@@ -86,8 +89,8 @@
 - (void) refreshIp {
     NSLog(@"RefreshIp");
     NSString* newIp = [self getIPAddress];
-    if (newIp && ![newIp isEqualToString:clientIp]) {
-        clientIp = newIp;
+    if (newIp && ![newIp isEqualToString:self.clientIp]) {
+        self.clientIp = newIp;
         [self destroySocket];
         [self initSocket];
         
