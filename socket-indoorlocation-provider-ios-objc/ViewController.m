@@ -28,8 +28,8 @@
     
 - (void) mapwizePluginDidLoad:(MapwizePlugin *)mapwizePlugin {
     
-    _socketProvider = [[ILSocketIndoorLocationProvider alloc] initWithUrl:@"YOUR_SOCKET_SERVER_URL"];
-    [mapwizePlugin setIndoorLocationProvider:_socketProvider];
+    self.socketProvider = [[ILSocketIndoorLocationProvider alloc] initWithUrl:@"YOUR_SOCKET_SERVER_URL"];
+    [mapwizePlugin setIndoorLocationProvider:self.socketProvider];
     
 }
 
