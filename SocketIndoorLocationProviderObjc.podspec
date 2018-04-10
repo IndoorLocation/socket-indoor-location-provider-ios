@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.source_files  = "socket-indoorlocation-provider-ios-objc/Provider/*.{h,m}"
   s.dependency "IndoorLocation", "1.0.4"
   s.dependency "Socket.IO-Client-Swift", "13.1.3"
+  s.swift_version = '4.1'
 end
