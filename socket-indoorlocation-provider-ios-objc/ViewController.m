@@ -3,11 +3,12 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) ILSocketIndoorLocationProvider* socketProvider;
+
 @end
 
 @implementation ViewController {
     MapwizePlugin* mapwizePlugin;
-    ILSocketIndoorLocationProvider* socketProvider;
 }
 
 - (void)viewDidLoad {
@@ -27,8 +28,8 @@
     
 - (void) mapwizePluginDidLoad:(MapwizePlugin *)mapwizePlugin {
     
-    socketProvider = [[ILSocketIndoorLocationProvider alloc] initWithUrl:@"YOUR_SOCKET_SERVER_URL"];
-    [mapwizePlugin setIndoorLocationProvider:socketProvider];
+    self.socketProvider = [[ILSocketIndoorLocationProvider alloc] initWithUrl:@"YOUR_SOCKET_SERVER_URL"];
+    [mapwizePlugin setIndoorLocationProvider:self.socketProvider];
     
 }
 

@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source       = { :git => "https://github.com/IndoorLocation/socket-indoor-location-provider-ios.git", :tag => "#{s.version}" }
   s.source_files  = "socket-indoorlocation-provider-ios-objc/Provider/*.{h,m}"
-  s.dependency "IndoorLocation", "~> 1.0"
-  s.dependency "Socket.IO-Client-Swift", "~> 13.1.0"
+  s.dependency "IndoorLocation", "1.0.4"
+  s.dependency "Socket.IO-Client-Swift", "13.1.3"
 end
