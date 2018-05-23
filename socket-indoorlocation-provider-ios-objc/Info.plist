@@ -5,7 +5,7 @@
 	<key>MWZMapwizeApiKey</key>
 	<string>cab8f29af2d764be17fb092b52ebf66f</string>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoibWFwd2l6ZSIsImEiOiJjaWd0NDJmNWQwMGFhdXlseGRpd29lMm50In0.z3m6qYCqQdlEBXcUhCLzeA</string>
+	<string>pk.mapwize</string>
 	<key>MGLMapboxMetricsEnabledSettingShownInApp</key>
 	<string>YES</string>
 	<key>CFBundleDevelopmentRegion</key>
