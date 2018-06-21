@@ -49,6 +49,9 @@
             NSNumber* latitude = indoorLocationDictionary[@"latitude"];
             NSNumber* longitude = indoorLocationDictionary[@"longitude"];
             NSNumber* floor = indoorLocationDictionary[@"floor"];
+            if ([floor isEqual:NSNull.null]) {
+                floor = nil;
+            }
             ILIndoorLocation* indoorLocation = [[ILIndoorLocation alloc] initWithProvider:self latitude:latitude.doubleValue longitude:longitude.doubleValue floor:floor];
             indoorLocation.accuracy = ((NSNumber*)indoorLocationDictionary[@"accuracy"]).doubleValue;
             
