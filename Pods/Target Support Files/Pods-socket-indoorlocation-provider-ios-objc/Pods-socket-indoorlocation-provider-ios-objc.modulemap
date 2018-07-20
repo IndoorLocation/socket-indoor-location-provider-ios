@@ -1,6 +1,0 @@
-framework module Pods_socket_indoorlocation_provider_ios_objc {
-  umbrella header "Pods-socket-indoorlocation-provider-ios-objc-umbrella.h"
-
-  export *
-  module * { export * }
-}
